@@ -38,7 +38,7 @@ svg {
   color: var(--selected-color);
 }
 .current::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -152,15 +152,15 @@ svg {
   display: flex;
 }
 
-.navLink{
-position: relative;
-display: block;
-padding: 32px 0;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.03em;
-transition: var(--link-transition)
+.navLink {
+  position: relative;
+  display: block;
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  transition: var(--link-transition);
 }
 .navSection {
   gap: 93px;
@@ -207,9 +207,7 @@ transition: var(--link-transition)
   display: flex;
   background-size: cover;
   justify-content: center;
-  background-position: center;
   background-repeat: no-repeat;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/main/background.jpg);
 }
@@ -245,6 +243,46 @@ transition: var(--link-transition)
 .mainButton:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/* -----MODAL----- */
+.backdrop{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal{
+  height: 528px;
+  width: 581px;
+  background-color: white;
+  border-radius: 4px;
+  position: fixed;
+  display: flex;
+  top: 221px;
+  left: 536px;
+  transform: translate(-30%,-10%);
+}
+.is-hidden{
+  display: none;
+}
+.closeButton{
+  width: 18px;
+  height: 18px;
+  fill: rgba(0, 0, 0, 1);
+}
+.closeBack{
+  transform: translate(550px,8px);
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 /* MAIN */
 /* Values */
@@ -283,6 +321,11 @@ transition: var(--link-transition)
 /* Values */
 
 /* ABOUT */
+.object {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
 .about {
   gap: 30px;
   padding: 0;
@@ -290,11 +333,40 @@ transition: var(--link-transition)
   display: flex;
   justify-content: space-evenly;
 }
+.aboutImg {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutText {
+  margin: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transform: translateY(170%);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 /* ABOUT */
 
 /* TEAM */
 .team {
   background-color: rgb(245, 244, 250);
+}
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .teamMember {
   gap: 50px;
@@ -320,8 +392,8 @@ transition: var(--link-transition)
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: center;
   color: rgb(117, 117, 117);
+  text-align: center;
 }
 .memberCard {
   gap: 30px;
@@ -431,7 +503,7 @@ transition: var(--link-transition)
 .product:hover > .imgContainer > .imgText {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    transform: translateY(0);
+  transform: translateY(0);
 }
 .productName {
   margin: 0;
@@ -458,11 +530,10 @@ transition: var(--link-transition)
 
 .imgContainer {
   display: flex;
-position: relative;
-overflow: hidden;
-;
+  position: relative;
+  overflow: hidden;
 }
-.imgText{
+.imgText {
   color: white;
   font-family: var(--main-font);
   font-size: 18px;
@@ -470,7 +541,7 @@ overflow: hidden;
   line-height: 1.5;
   letter-spacing: 0.03em;
   position: absolute;
-  transform: translateY(100%) ;
+  transform: translateY(100%);
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
@@ -479,7 +550,7 @@ overflow: hidden;
   align-items: center;
   justify-content: center;
   padding: 63px 24px;
-  transition: transform 250ms var(--cubic)
+  transition: transform 250ms var(--cubic);
 }
 /* -----PORTAFOLIO----- */
 
