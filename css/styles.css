@@ -255,15 +255,15 @@ svg {
   background: rgba(0, 0, 0, 0.5);
 }
 .modal{
-  height: 528px;
+  top: 50%;
+  left: 50%;
   width: 581px;
-  background-color: white;
-  border-radius: 4px;
-  position: fixed;
+  height: 528px;
   display: flex;
-  top: 221px;
-  left: 536px;
-  transform: translate(-30%,-10%);
+  border-radius: 4px;
+  position: absolute;
+  background-color: white;
+  transform: translate(-50%,-50%);
 }
 .is-hidden{
   display: none;
@@ -342,13 +342,13 @@ svg {
 }
 .aboutText {
   margin: 0;
+  bottom: 0;
   width: 100%;
   padding: 27px 0;
   font-size: 14px;
   line-height: 1.1;
   font-weight: 700;
   letter-spacing: 0.03em;
-  transform: translateY(170%);
   color: rgba(255, 255, 255, 1);
   background-color: rgba(47, 48, 58, 0.8);
   display: flex;
