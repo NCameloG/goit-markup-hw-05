@@ -492,10 +492,13 @@ svg {
 .product {
   border-radius: 0px 0px 4px 4px;
   border: 1px solid rgb(238, 238, 238);
-  flex-basis: calc((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  width: 370px;
   cursor: pointer;
   flex-wrap: nowrap;
   transition: box-shadow 250ms var(--cubic);
+  display: flex;
+  flex-direction: column;
 }
 .product:hover,
 .product:focus,
